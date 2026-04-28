@@ -1027,6 +1027,13 @@ input[type="text"] {
 #fh5co-footer .copyright .block {
   display: block;
 }
+#fh5co-footer .copyright .footer-credit {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.35);
+}
+#fh5co-footer .copyright .footer-credit a {
+  color: rgba(0, 0, 0, 0.45);
+}
 
 #fh5co-offcanvas {
   position: absolute;

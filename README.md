@@ -2,6 +2,8 @@
 
 Personal portfolio website for Nicole Erin Keffer.
 
+Live site: [nicoleerinkeffer.com](https://nicoleerinkeffer.com)
+
 ## Pages
 
 - `index.html` - homepage
