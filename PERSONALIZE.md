@@ -1,18 +1,14 @@
-# Nicole Erin Portfolio Personalization Checklist
+# Nicole Erin Portfolio Polish Checklist
 
-This first pass removes the stock template language and turns the site into a professional portfolio shell for Nicole Erin.
+The core pages now use Nicole Erin Keffer's portfolio content. Use this list for the remaining cleanup before publishing.
 
-Replace these placeholders next:
+Review next:
 
-- `Your City, ST`
-- `hello@nicoleerin.com`
-- LinkedIn link placeholders marked `href="#"`
-- Resume link placeholders marked `href="#"`
-- Homepage hero line: `Use this space for your strongest professional positioning statement.`
-- About page bio paragraph beginning `I am building a professional portfolio...`
-- Project cards on `work.html`
-- Project detail copy on `work-single.html`
-- Stock images in `images/` with your headshot, work samples, or brand visuals
+- `blog.html` still contains stock template blog content and is not part of the main navigation.
+- `work-single.html` appears to be a legacy generic project detail page; keep it only if you still link to it.
+- Confirm every project page has the final writeup, image selection, and any external links you want recruiters to see.
+- Confirm the resume PDF is current: `resume-nicole-keffer.pdf`.
+- Replace any remaining stock images in `images/` with final headshots, project screenshots, or brand visuals.
 
 Suggested project card format:
 

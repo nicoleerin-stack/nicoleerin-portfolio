@@ -8,8 +8,10 @@ Live site: [nicoleerinkeffer.com](https://nicoleerinkeffer.com)
 
 - `index.html` - homepage
 - `about.html` - about page
+- `resume.html` - resume and experience
 - `work.html` - selected work
-- `contact.html` - contact details and resume link
+- `connect.html` - contact details and links
+- `contact.html` - redirect to `connect.html` for older links
 
 ## Local Preview
 
