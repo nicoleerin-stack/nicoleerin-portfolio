@@ -1,21 +1,38 @@
 # Nicole Erin Keffer Portfolio
 
-Personal portfolio website for Nicole Erin Keffer.
+Personal portfolio website for Nicole Erin Keffer, focused on data analytics, UX/UI, research, and project storytelling.
 
 Live site: [nicoleerinkeffer.com](https://nicoleerinkeffer.com)
 
-## Pages
+## Site Structure
 
-- `index.html` - homepage
-- `about.html` - about page
-- `resume.html` - resume and experience
-- `work.html` - selected work
-- `connect.html` - contact details and links
-- `contact.html` - redirect to `connect.html` for older links
+- `index.html` - homepage with featured work, focus areas, and current highlights
+- `resume.html` - embedded resume with download access
+- `work.html` - highlighted projects and full project gallery
+- `about.html` - professional story, bio, and personal background
+- `connect.html` - contact details, social links, and message form
+- `contact.html` - redirect page for older contact links
 
-## Local Preview
+## Project Pages
 
-Open `index.html` in a browser, or open this folder in WebStorm and use **Open in Browser**.
+- `project-skin-it-to-win-it.html`
+- `project-cheyenne-zoo.html`
+- `project-blue-planet-refuges.html`
+- `project-digital-legacy-sop.html`
+- `project-galaxy-morphology.html`
+- `project-data-design-deception.html`
+- `project-openstreetmap.html`
+- `project-capital-income.html`
+- `project-radio1190.html`
+- `project-sql-business-proposal.html`
+- `project-buff-portal.html`
+
+## Assets
+
+- `images/` - hero images, gallery images, and project visuals
+- `css/` - site styling and responsive layout rules
+- `js/` - template scripts and interactive behavior
+- PDF files in the root support resume and project writeup embeds
 
 ## Credits
 
