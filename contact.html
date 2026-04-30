@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +47,7 @@
 
 	</head>
 	<body>
-		
+	<a class="skip-link" href="#main-content">Skip to main content</a>
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
@@ -71,7 +71,7 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container-wrap">
+	<div class="container-wrap" id="main-content">
 		<aside id="fh5co-hero">
 			<div class="flexslider">
 				<ul class="slides">
@@ -102,27 +102,30 @@
 				<div class="col-md-3 col-md-push-1 animate-box">
 					<h3>Contact Details</h3>
 					<ul class="contact-info">
-						<li><i class="icon-location4"></i>Boulder, CO</li>
-						<li><i class="icon-envelope"></i><a href="mailto:nicole.keffer@colorado.edu">nicole.keffer@colorado.edu</a></li>
-						<li><i class="icon-linkedin"></i><a href="https://www.linkedin.com/in/nicoleerin/" target="_blank" rel="noopener">LinkedIn profile</a></li>
-						<li><i class="icon-github"></i><a href="https://github.com/nicoleerin-stack" target="_blank" rel="noopener">GitHub profile</a></li>
+						<li><i class="icon-location4" aria-hidden="true"></i>Boulder, CO</li>
+						<li><i class="icon-envelope" aria-hidden="true"></i><a href="mailto:nicole.keffer@colorado.edu">nicole.keffer@colorado.edu</a></li>
+						<li><i class="icon-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/nicoleerin/" target="_blank" rel="noopener">LinkedIn profile</a></li>
+						<li><i class="icon-github" aria-hidden="true"></i><a href="https://github.com/nicoleerin-stack" target="_blank" rel="noopener">GitHub profile</a></li>
 					</ul>
 				</div>
 				<div class="col-md-7 col-md-push-1 animate-box">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Name">
+								<label class="sr-only" for="contact-name">Name</label>
+								<input type="text" class="form-control" id="contact-name" name="name" placeholder="Name" autocomplete="name">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Email">
+								<label class="sr-only" for="contact-email">Email</label>
+								<input type="email" class="form-control" id="contact-email" name="email" placeholder="Email" autocomplete="email">
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
-								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+								<label class="sr-only" for="contact-message">Message</label>
+								<textarea name="message" class="form-control" id="contact-message" cols="30" rows="7" placeholder="Message"></textarea>
 							</div>
 						</div>
 						<div class="col-md-12">
@@ -183,9 +186,9 @@
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="https://www.linkedin.com/in/nicoleerin/" target="_blank" rel="noopener"><i class="icon-linkedin"></i></a></li>
-							<li><a href="https://github.com/nicoleerin-stack" target="_blank" rel="noopener"><i class="icon-github"></i></a></li>
-							<li><a href="resume-nicole-keffer.pdf" download><i class="icon-file-pdf"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/nicoleerin/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="icon-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="https://github.com/nicoleerin-stack" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="icon-github" aria-hidden="true"></i></a></li>
+							<li><a href="resume-nicole-keffer.pdf" download aria-label="Download resume PDF"><i class="icon-file-pdf" aria-hidden="true"></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -195,7 +198,7 @@
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+		<a href="#" class="js-gotop" aria-label="Back to top"><i class="icon-arrow-up2" aria-hidden="true"></i></a>
 	</div>
 	
 	<!-- jQuery -->
