@@ -935,6 +935,15 @@ h1, h2, h3, h4, h5, h6, figure {
 .project-detail-copy .project-primary-link {
   margin-top: 0;
 }
+.project-detail-copy .project-resource-links {
+  margin-bottom: 22px;
+}
+.project-detail-copy .project-resource-links p {
+  margin: 0 0 6px;
+}
+.project-detail-copy .project-resource-links .project-external-link {
+  margin: 0;
+}
 .case-study-meta {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1414,6 +1423,18 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 18px;
   color: #555;
 }
+.contact-info li .medium-profile-icon {
+  position: absolute;
+  top: .3em;
+  left: 0;
+  color: #555;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  width: 18px;
+}
 .contact-info li a {
   color: #000;
   overflow-wrap: anywhere;
@@ -1484,6 +1505,15 @@ input[type="text"] {
 }
 .fh5co-social-icons li a i {
   font-size: 20px;
+}
+.fh5co-social-icons li a .medium-social-icon {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  min-width: 18px;
+  text-align: center;
 }
 
 .fh5co-heading {
