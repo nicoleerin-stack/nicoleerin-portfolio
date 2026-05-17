@@ -11,7 +11,7 @@ Live site: [nicoleerinkeffer.com](https://nicoleerinkeffer.com)
 - `work.html` - highlighted projects and full project gallery
 - `about.html` - professional story, bio, and personal background
 - `connect.html` - contact details, social links, and message form
-- `contact.html` - redirect page for older contact links
+- `credits.html` - source and library attribution
 
 ## Project Pages
 
@@ -31,9 +31,9 @@ Live site: [nicoleerinkeffer.com](https://nicoleerinkeffer.com)
 
 - `images/` - hero images, gallery images, and project visuals
 - `css/` - site styling and responsive layout rules
-- `js/` - template scripts and interactive behavior
+- `js/` - site scripts and interactive behavior
 - PDF files in the root support resume and project writeup embeds
 
 ## Credits
 
-Built from the Neat HTML5 template and customized for Nicole Erin Keffer.
+Source and library attribution details are available on `credits.html`.

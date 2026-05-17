@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
 	<head>
 	<meta charset="utf-8">
@@ -69,11 +69,24 @@
 		<div id="fh5co-work">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 project-detail-copy">
-					<div class="project-pdf-embed">
-						<h3>Resume PDF</h3>
-						<iframe src="resume-nicole-keffer.pdf" title="Nicole Erin Keffer resume PDF"></iframe>
+					<div class="resume-tabs" role="tablist" aria-label="Resume versions">
+						<button class="resume-tab is-active" type="button" id="resume-tab-da" role="tab" aria-selected="true" aria-controls="resume-panel-da" data-resume-tab="da">Data Analytics Resume</button>
+						<button class="resume-tab" type="button" id="resume-tab-uxui" role="tab" aria-selected="false" aria-controls="resume-panel-uxui" data-resume-tab="uxui">UX/UI Resume</button>
 					</div>
-					<p class="resume-download-action"><a class="btn btn-primary" href="resume-nicole-keffer.pdf" download>Download Resume</a></p>
+					<div class="resume-panel is-active" id="resume-panel-da" role="tabpanel" aria-labelledby="resume-tab-da" data-resume-panel="da">
+						<div class="project-pdf-embed">
+							<h3>Data Analytics Resume</h3>
+							<iframe src="keffer-nicole-resume-data-analytics.pdf" title="Nicole Erin Keffer data analytics resume PDF"></iframe>
+						</div>
+						<p class="resume-download-action"><a class="btn btn-primary" href="keffer-nicole-resume-data-analytics.pdf" download>Download Data Analytics Resume</a> <a class="project-external-link" href="keffer-nicole-resume-data-analytics.pdf" target="_blank" rel="noopener">Open PDF in a new tab</a></p>
+					</div>
+					<div class="resume-panel" id="resume-panel-uxui" role="tabpanel" aria-labelledby="resume-tab-uxui" data-resume-panel="uxui" hidden>
+						<div class="project-pdf-embed">
+							<h3>UX/UI Resume</h3>
+							<iframe src="keffer-nicole-resume-ux-ui.pdf" title="Nicole Erin Keffer UX/UI resume PDF"></iframe>
+						</div>
+						<p class="resume-download-action"><a class="btn btn-primary" href="keffer-nicole-resume-ux-ui.pdf" download>Download UX/UI Resume</a> <a class="project-external-link" href="keffer-nicole-resume-ux-ui.pdf" target="_blank" rel="noopener">Open PDF in a new tab</a></p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -108,7 +121,7 @@
 				<div class="col-md-3">
 					<h4>Contact Information</h4>
 					<ul class="fh5co-footer-links">
-						<li>Boulder, CO</li>
+						<li>San Diego, CA</li>
 						<li><a href="mailto:nicoleerinkeffer@outlook.com">nicoleerinkeffer@outlook.com</a></li>
 						<li><a href="https://www.linkedin.com/in/nicoleerin/" target="_blank" rel="noopener">LinkedIn</a></li>
 						<li><a href="https://github.com/nicoleerin-stack" target="_blank" rel="noopener">GitHub</a></li>
@@ -121,14 +134,14 @@
 				<div class="col-md-12 text-center">
 					<p>
 						<small class="block">&copy; 2026 Nicole Erin. All Rights Reserved.</small>
-						<small class="block footer-credit">Template by <a href="https://freehtml5.co/" target="_blank" rel="noopener">FreeHTML5.co</a>, customized by Nicole Erin.</small>
+						<small class="block footer-credit"><a href="credits.html">Credits</a></small>
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="https://www.linkedin.com/in/nicoleerin/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="icon-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href="https://github.com/nicoleerin-stack" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="icon-github" aria-hidden="true"></i></a></li>
-							<li><a href="https://nicoleerin.medium.com/" target="_blank" rel="noopener" aria-label="Medium profile"><span class="medium-social-icon" aria-hidden="true">M</span></a></li>
-							<li><a href="resume-nicole-keffer.pdf" download aria-label="Download resume PDF"><i class="icon-file-pdf" aria-hidden="true"></i></a></li>
+							<li><a href="https://nicoleerin.medium.com/" target="_blank" rel="noopener" aria-label="Medium profile"><img class="medium-social-icon" src="images/medium-logo-green.webp" alt="" aria-hidden="true"></a></li>
+							<li><a href="keffer-nicole-resume-data-analytics.pdf" download aria-label="Download data analytics resume PDF"><i class="icon-file-pdf" aria-hidden="true"></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -149,6 +162,22 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		document.querySelectorAll('[data-resume-tab]').forEach(function(tab) {
+			tab.addEventListener('click', function() {
+				var target = tab.getAttribute('data-resume-tab');
+				document.querySelectorAll('[data-resume-tab]').forEach(function(button) {
+					var isActive = button === tab;
+					button.classList.toggle('is-active', isActive);
+					button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+				});
+				document.querySelectorAll('[data-resume-panel]').forEach(function(panel) {
+					var isActive = panel.getAttribute('data-resume-panel') === target;
+					panel.classList.toggle('is-active', isActive);
+					panel.hidden = !isActive;
+				});
+			});
+		});
+	</script>
 	</body>
 </html>
-
